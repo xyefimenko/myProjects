@@ -1,0 +1,17 @@
+#sp {
+    font-size: small;
+
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.form-check, .form-check-inline{
+    text-align: center;
+}
+
+/*#numberInput, #sliderInput {
+    display: none;
+}*/

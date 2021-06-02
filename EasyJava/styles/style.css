@@ -1,0 +1,111 @@
+body {
+    margin:40px;
+    background-color: ghostwhite;
+    font-family: "Comic Sans MS";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.inputMy {
+    text-align: center;
+    background-color: #fafafa;
+    border:0;
+    box-shadow:0 0 4px rgba(0,0,0,0.3);
+    transition: .3s box-shadow;
+    margin-right: 35%;
+    margin-left: 35%;
+}
+
+input {
+    display:block;
+    width:100%;
+    margin:10px 0;
+    padding:10px;
+}
+
+.inputMy:hover {
+    box-shadow:0 0 4px rgba(0,0,0,0.5);
+}
+
+.button {
+    margin-top: 20px;
+    margin-right: 45%;
+    margin-left: 45%;
+}
+
+button {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+}
+button:hover { background: rgb(53, 167, 110); }
+button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+.upperContainer {
+    background-color: antiquewhite;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: center;
+    align-self: center;
+    display: none;
+    flex-direction: column;
+}
+
+.table-container {
+    background-color: ghostwhite;
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    height: 40%;
+    width: 50%;
+    flex-direction: column;
+}
+
+.last-buttons {
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+
+#tab-cont {
+    opacity: 1;
+    z-index: 1000;
+}
+
+#inH {
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+}

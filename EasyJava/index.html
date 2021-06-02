@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XY</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Generátor hodnôt funkcie f() = X.Y</h1>
+    <div class="inputMy">
+        <label for="xId">Zadajte X</label>
+        <input type="number" name="x" id="xId" value="">
+    </div>
+    <div class="inputMy">
+        <label for="yId">Zadajte Y</label>
+        <input type="number" name="y" id="yId" value="">
+    </div>
+    <button class="button" id="sendButton" onclick="submit()" type="submit">Generovat'</button>
+</div>
+
+<div class="upperContainer" id="upBlock">
+    <h1 id="inH"><b>Tabul'ka výsledkov</b></h1>
+    <div class="table-container" id="tab-cont">
+
+    </div>
+    <div class="last-buttons">
+        <button id="back-button" onclick="back()" type="submit">Vrátiť sa</button>
+    </div>
+</div>
+
+</body>
+</html>

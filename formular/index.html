@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body style="background-color: blanchedalmond">
+<div class="row" id="Error" style="display: none; justify-content: center">
+    <div class="alert alert-danger" role="alert">
+    Non valid data!
+    </div>
+</div>
+<div class="row mt-1 justify-content-center">
+<div class="card col-6">
+<h5 class="align-self-center card-header">
+    Rock Form
+</h5>
+<div class="card-body">
+    <h2>Personálne údaje:</h2>
+    <form class="needs-validation" action="http://iolab.sk/form2mail/form2mail.php" method="post" enctype="multipart/form-data" id="form" name="myForm" novalidate>
+        <input type="hidden" name="apikey" value="1fe5370cf63d3a0928adb5730c3f536d">
+        <input type="hidden" name="from" value="xyefimenko@stuba.sk">
+        <input type="hidden" name="sender" value="Denys Yefimenko">
+        <input type="hidden" name="to" value="feistu04@gmail.com">
+        <input type="hidden" name="subject" value="Formular">
+        <input type="hidden" name="redirectOk" value="http://147.175.121.202/~xyefimenko/webmasterno/index.html">
+        <input type="hidden" name="redirectFalse" value="http://147.175.121.202/~xyefimenko/dadada228gangsta/index.html">
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Meno</label>
+                <input type="text" class="form-control" id="validationCustom01" onchange="isNameEmpty()" name="name" value="" required>
+                <div class="valid-feedback" id="validFeedback">
+                    Vyyerá dobre
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Priezvisko</label>
+                <input type="text" class="form-control" id="validationCustom02" onchange="isLastNameEmpty()" name="lastName" value="" required>
+                <div class="valid-feedback">
+                    Vyzerá dobre
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom03">Mesto</label>
+                <input type="text" class="form-control" id="validationCustom03" onchange="isCityEmpty()" name="city" required>
+                <div class="invalid-feedback">
+                    Napíšte správne mesto
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Stat</label>
+                <select class="custom-select" id="validationCustom04" onchange="ineVisible()" name="state" required>
+                    <option selected value="">štat</option>
+                    <option value="BA">Bratislava</option>
+                    <option value="VD">Viedeň</option>
+                    <option value="INE">Iné</option>
+                </select>
+                <div class="invalid-feedback">
+                    Výberte svoj štat
+                </div>
+            </div>
+            <div class="col-md-3 mb-3" id="ineButton" style="display: none">
+                <label for="validationCustom05">Iné</label>
+                <input type="text" class="form-control" id="validationCustom05" name="iny stat">
+            </div>
+        </div>
+
+        <h2>Pači sa Vám metal?</h2>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="invisible Block" onchange="invision()" id="exampleRadios1" value="turnOf" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                nie
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="invisible Block" onchange="vision()" id="exampleRadios2" value="turnOn">
+            <label class="form-check-label" for="exampleRadios2">
+                áno
+            </label>
+        </div>
+        <br>
+
+        <div id="invisible" style="display: none">
+            <h5>Obl'úbenejší kapely</h5>
+            <div class="form-check" >
+                <input class="form-check-input" type="checkbox" name="metallica Chceck Box" value="vybrane" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Metallica
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="AC/DC check Box" value="vybrane" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck1">
+                    AC/DC
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="slayer Chcek Box" value="vybrane" id="defaultCheck3">
+                <label class="form-check-label" for="defaultCheck1">
+                    Slayer
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="papa Roach Check Box" value="vybrane" id="defaultCheck4">
+                <label class="form-check-label" for="defaultCheck1">
+                    Papa roach
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="bfmv Chceck Box" value="vybrane" id="defaultCheck5">
+                <label class="form-check-label" for="defaultCheck1">
+                    Bullet For My Valentine
+                </label>
+            </div>
+            <br>
+            <div>
+                <div class="col-md-12 mb-12">
+                    <label for="validationCustom04">Najlepší album kapely:</label>
+                    <select class="custom-select" onchange="bandSelect()" name="najlepsi Album Kapely" id="validationCustom06" >
+                        <option selected disabled value="">Kapela</option>
+                        <option value="metallica">Metallica</option>
+                        <option value="bfmv">Bullet For My Valentine</option>
+                        <option value="slipknot">Slipknot</option>
+                    </select>
+                </div>
+                <br>
+                <div class="col-md-12 mb-12" id="invisibleMetallica" style="display: none">
+                    <label for="validationCustom04">Metallica</label>
+                    <select class="custom-select" id="validationCustom08" name="najlepsi Album Metalliky">
+                        <option selected disabled value="">metallica</option>
+                        <option>Kill'em All</option>
+                        <option>Master Of Puppets</option>
+                        <option>Hardwire</option>
+                    </select>
+                </div>
+                <br>
+                <div class="col-md-12 mb-12" id="invisibleBullet" style="display: none" >
+                    <label for="validationCustom04">Bullet For My Valentine</label>
+                    <select class="custom-select" id="bulletAlbums" onchange="bulletAlbum()" name="bfmv album vyber">
+                        <option selected disabled value="" >BFMV</option>
+                        <option value="poison">The Poison</option>
+                        <option value="gravity">Gravity</option>
+                        <option value="scream">Scream Aim Fir</option>
+                    </select>
+                </div>
+
+                <div class="col-md-12 mb-12" id="invisiblePoison" style="display: none">
+                    <label for="validationCustom04">Poison Album</label>
+                    <select class="custom-select" id="validationCustom15" name="vyber piesne z Poison">
+                        <option selected disabled value="">Poison</option>
+                        <option>The Poison</option>
+                        <option>Tears Don't Fall</option>
+                        <option>Spit It Out</option>
+                    </select>
+                </div>
+                <div class="col-md-12 mb-12" id="invisibleGravity" style="display: none">
+                    <label for="validationCustom04">Gravity album</label>
+                    <select class="custom-select" id="validationCustom16" name="vyber piesne z Gravity">
+                        <option selected disabled value="">Gravity</option>
+                        <option>Don't Need You</option>
+                        <option>Over It</option>
+                        <option>Piece Of Me</option>
+                    </select>
+                </div>
+                <div class="col-md-12 mb-12" id="invisibleScreamAimFire" style="display: none">
+                    <label for="validationCustom04">Scream Aim Fire album</label>
+                    <select class="custom-select" id="validationCustom17" name="vyber piesne zo Scream Aim Fire">
+                        <option selected disabled value="">SAF</option>
+                        <option>Waking The Demon</option>
+                        <option>Alone</option>
+                        <option>Scream Aim Fir</option>
+                    </select>
+                </div>
+
+                <br>
+                <div class="col-md-12 mb-12" id="invisibleSlipknot" style="display: none">
+                    <label for="validationCustom04">Slipknot</label>
+                    <select class="custom-select" id="validationCustom12" name="slipknot album vyber">
+                        <option selected disabled value="">Slipknot</option>
+                        <option>Iowa</option>
+                        <option>Spit It Out</option>
+                        <option>Slipknot</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Dátum narodnenia</label>
+                <input type="date" class="form-control" id="validationCustom10" name="datumNarodnenia" value="" required>
+                <div class="valid-feedback">
+                    Vyzerá dobre
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Vek</label>
+                <input type="number" class="form-control" id="validationCustom11" onchange="ageTest()" name="vek" value="" required>
+                <div class="valid-feedback">
+                    Vyzerá dobre
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputEmail1">Emailova adresa</label>
+            <input type="email" class="form-control is-invalid" id="exampleInputEmail1" onchange="checkEmeil()" name="email" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">Zadajte adresu.</small>
+        </div>
+
+        <div class="mb-3">
+            <label for="validationTextarea">Sprava</label>
+            <textarea class="form-control" id="validationTextarea" name="text" placeholder="Napište svoju spravu" required></textarea>
+            <div class="invalid-feedback">
+                Napište svoju spravu
+            </div>
+
+        <br>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" name="wasAgreed" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" id="sendButton" onchange="totalCheck()" type="submit">Submit form</button>
+
+</div>
+    </form>
+</div>
+</div>
+</div>
+</body>
+</html>

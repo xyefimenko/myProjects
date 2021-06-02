@@ -1,0 +1,15 @@
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.error input{
+    border-color: darkred;
+}
+
+.valid-feedbackMy {
+    display: none;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #28a745;
+}

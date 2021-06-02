@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxKWgY8rV8OeJVgwxfbQjDk-aCLhCzXJc&callback=initMap&libraries=&v=weekly"
+            defer
+    ></script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Google MAPS</h1>
+
+        <!--<div id="floating-panel">
+            <input
+                    type="button"
+                    value="Toggle Street View"
+                    onclick="toggleStreetView();"
+            />
+        </div>-->
+
+
+
+    <div id="map"></div>
+    <div id="street-view"></div>
+    <input type="text" id="search" class="search" placeholder="Search...">
+
+    <div id="selector" class="select">
+
+        <input type="radio" name="type" id="peso" checked="checked">
+        <label for="peso">Pešo</label>
+
+        <input type="radio" name="type" id="drive">
+        <label for="drive">šoferovat</label>
+    </div>
+</body>
+</html>

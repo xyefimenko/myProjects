@@ -1,0 +1,184 @@
+header {
+    background: #2c3e50;
+    color: #fff;
+}
+
+header h1,
+header, headerNav, footer{
+    display: inline-block;
+}
+
+#headerNav {
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+}
+
+#headerNav {
+    color: white;
+}
+
+#aboutme {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    font-size: large;
+    font-family: Constantia;
+}
+
+
+.navA {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.navB {
+    color: white;
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 15px;
+}
+
+.navC {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.navH {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+table, th, td, #legend {
+  border: 1px solid black;
+}
+
+.h1NaStranke, .h2NaStranke
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+table, td{
+    height: 50px;
+}
+
+table{
+    margin-top: 50px;
+}
+
+#mainDiv {
+    height: 90%;
+    width: 90%;
+    align-self: center;
+
+}
+
+#myPhoto2 {
+    height: 200px;
+    width: 150px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+#myPhoto {
+    height: 450px;
+    width: 350px;
+    margin-right: 5%;
+}
+
+h1 {
+    padding-left: 5%;
+}
+
+footer {
+    display: flex;
+    background: #2c3e50;
+    color: #fff;
+    height: 70px;
+    font-size: medium;
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#legend {
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    margin: auto;
+}
+
+.my_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.casAden {
+    background-color: darkgrey;
+}
+
+
+
+.prednaska {
+    background-color: greenyellow;
+}
+
+.cviko {
+    background-color: deepskyblue;
+}
+
+aside {
+    background: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    float: right;
+    height: 40px;
+}
+
+#leftCol {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    float: left;
+    align-self: flex-end;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding-bottom: 202px;
+}
+
+#rightCol {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    float: right;
+    align-self: flex-start;
+    text-align: left;
+    flex-direction: column;
+    background-color: beige;
+    padding-bottom: 22px;
+}
+
+.rightColH3 {
+    margin-left: 20px;
+}
+
+.container {
+    flex-direction: row;
+    width: 70%;
+    align-self: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}

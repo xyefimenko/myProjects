@@ -1,0 +1,327 @@
+header {
+    background: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1,
+header, footer{
+    display: inline-block;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-family: Constantia;
+}
+
+.page {
+    grid-area: p;
+    border: 1px solid black;
+}
+
+.drummer {
+    grid-area: d;
+    border: 1px solid black;
+}
+
+.matt {
+    grid-area: m;
+    border: 1px solid black;
+}
+
+.john {
+    grid-area: j;
+    border: 1px solid black;
+}
+
+.pInfo {
+    grid-area: pi;
+    background-color: black;
+    display: none;
+    color: white;
+    font-size: x-large;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    border: 6px solid white;
+    border-radius: 25px;
+
+}
+.dInfo {
+    grid-area: pi;
+    background-color: black;
+    display: none;
+    color: white;
+    font-size: x-large;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    border: 6px solid white;
+    border-radius: 25px;
+}
+
+.mInfo {
+    grid-area: pi;
+    background-color: black;
+    display: none;
+    color: white;
+    font-size: x-large;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    border: 6px solid white;
+    border-radius: 25px;
+}
+.jInfo {
+    grid-area: pi;
+    background-color: black;
+    display: none;
+    color: white;
+    font-size: x-large;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    border: 6px solid white;
+    border-radius: 25px;
+}
+
+.inPhotos {
+    height: 10%;
+    width: 10%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.page:hover ~ .pInfo{
+    display: block;
+}
+
+.page:hover {
+    border: 0;
+}
+
+.matt:hover {
+    border: 0;
+}
+
+.drummer:hover {
+    border: 0;
+}
+
+.john:hover {
+    border: 0;
+}
+
+.drummer:hover ~ .dInfo{
+    display: block;
+}
+.matt:hover ~ .mInfo{
+    display: block;
+}
+
+.john:hover ~ .jInfo{
+    display: block;
+}
+
+.conteiner {
+    display: grid;
+    background-image: url("../images/mainBFMV.jpg");
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-repeat: no-repeat;
+    /*grid-template-columns: 32% 14% 18% auto;
+    grid-template-rows: 20% 680px;*/
+    grid-template-columns: 1.7fr 2.2fr 1.8fr 2.4fr 2.4fr 2fr;
+    grid-template-rows: 0.6fr 1fr 2fr;
+    height: 680px;
+    border:  10px solid black;
+    grid-column-gap: 10px;
+    grid-row-gap: 10%;
+    grid-template-areas: ". . . . . ." ". p d m j ." ". pi pi pi pi .";
+}
+
+@media (min-width: 1247px) {
+    .conteiner {
+        height: 580px;
+    }
+}
+
+@media (min-width: 1103px) and (max-width: 1246px){
+    .conteiner {
+        height: 450px;
+    }
+    .pInfo {
+        font-size: large;
+    }
+    .dInfo {
+        font-size: large;
+    }
+    .mInfo {
+        font-size: large;
+    }
+    .jInfo {
+        font-size: large;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1102px){
+    .conteiner {
+        background-color: darkorange;
+        height: 400px;
+    }
+    .pInfo {
+        font-size: medium;
+    }
+    .dInfo {
+        font-size: medium;
+    }
+    .mInfo {
+        font-size: medium;
+    }
+    .jInfo {
+        font-size: medium;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 950px){
+    .conteiner {
+        background-color: darkorange;
+        height: 310px;
+    }
+    .pInfo {
+        font-size: small;
+    }
+    .dInfo {
+        font-size: small;
+    }
+    .mInfo {
+        font-size: small;
+    }
+    .jInfo {
+        font-size: small;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px){
+    .conteiner {
+        background-color: darkorange;
+        height: 220px;
+    }
+    .pInfo {
+        font-size: xx-small;
+    }
+    .dInfo {
+        font-size: xx-small;
+    }
+    .mInfo {
+        font-size: xx-small;
+    }
+    .jInfo {
+        font-size: xx-small;
+    }
+}
+
+@media (min-width: 358px) and (max-width: 500px){
+    .conteiner {
+        background-color: darkorange;
+        height: 150px;
+    }
+    .pInfo {
+        font-size: 5px;
+    }
+    .dInfo {
+        font-size: 5px;
+    }
+    .mInfo {
+        font-size: 5px;
+    }
+    .jInfo {
+        font-size: 5px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 358px){
+    .conteiner {
+        background-color: darkorange;
+        height: 100px;
+    }
+    .pInfo {
+        font-size: 2px;
+    }
+    .dInfo {
+        font-size: 2px;
+    }
+    .mInfo {
+        font-size: 2px;
+    }
+    .jInfo {
+        font-size: 2px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 200px){
+    .conteiner {
+        background-color: darkorange;
+        height: 50px;
+    }
+}
+
+.conteinPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+
+#logoPhoto {
+    height: 60%;
+    width: 50%;
+    display: flex;
+    align-self: center;
+    margin-top: 3%;
+}
+
+#linky {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+li {
+    margin-left: 10%;
+}
+
+footer {
+    display: flex;
+    background: black;
+    color: #fff;
+    height: 70px;
+    font-size: medium;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}

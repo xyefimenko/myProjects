@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>MyTimeTable</title>
+</head>
+<body>
+	<header style="display: flex; justify-content: space-between; width: 100%">
+        <div style="margin: 0 0 0 20px;"><h1>Denys Yefimenko - 1 Úloha</h1></div>
+        <div class="navigation" style="display: flex; justify-content: center; margin: 0 20px 0 0;">
+            <ul id="headerNav" style="display: flex; justify-content: center; align-self: center;">
+				<li><a href="index.html" id="navA" class="navA">O mne  </a></li>
+				<li><a href="zivotopis.html" class="navB">Životopis  </a></li>
+				<li><a href="rozvrh.html" id="navC" class="navA">Môj rozvrh</a></li>
+            </ul>
+        </div>
+    </header>
+
+	<h1 class="h1NaStranke">Mam taky rozvrh:</h1>
+
+	<div class="TimeShedule" style="display: flex; justify-content: center;">
+        <table style="width:50%">
+			<thead>
+			  <tr>
+			  	<th></th>
+				  <th class="casAden">7:00 - 7:50</th>
+			    <th class="casAden">8:00 - 8:50</th>
+			    <th class="casAden">9:00 - 9:50</th>
+			    <th class="casAden">10:00 - 10:50</th>
+			    <th class="casAden">11:00 - 11:50</th>
+			    <th class="casAden">12:00 - 12:50</th>
+			    <th class="casAden">13:00 - 13:50</th>
+			    <th class="casAden">14:00 - 14:50</th>
+			    <th class="casAden">15:00 - 15:50</th>
+			    <th class="casAden">16:00 - 16:50</th>
+			    <th class="casAden">17:00 - 17:50</th>
+			    <th class="casAden">18:00 - 18:50</th>
+				  <th class="casAden">19:00 - 19:50</th>
+				  <th class="casAden">20:00 - 20:50</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+			    <td class="casAden">pondelok</td>
+				  <td colspan="14"></td>
+			  <tr>
+			    <td class="casAden">utorok</td>
+				  <td colspan="6" class="emptyCol"></td>
+				  <td colspan="2" class="prednaska">Webove technologie</td>
+				  <td colspan="2" class="prednaska">Analyza a zlozitost algoritmov</td>
+				  <td colspan="4"></td>
+			  </tr>
+			   <tr>
+			    <td class="casAden">streda</td>
+				   <td colspan="3" class="emptyCol"></td>
+				   <td class="prednaska">Analyza a zlozitost algoritmov</td>
+				   <td colspan="2"  class="prednaska">Operacne systemy</td>
+				   <td colspan="2" class="emptyCol"></td>
+				   <td colspan="2" class="cviko">Softverove inzenerstvo</td>
+				   <td colspan="4"></td>
+			  </tr>
+			   <tr>
+			    <td class="casAden">stvrtok</td>
+				   <td class="emptyCol"></td>
+				   <td class="prednaska">Operacne systemy</td>
+				   <td class="emptyCol"></td>
+				   <td class="cviko">Analyza a zlozitost algoritmov</td>
+				   <td class="emptyCol"></td>
+				   <td class="cviko">Operacne systemy</td>
+				   <td colspan="2" class="prednaska">Softverove inzenerstvo</td>
+				   <td colspan="2" class="prednaska">Webove technologie</td>
+				   <td colspan="4"></td>
+			  </tr>
+			   <tr>
+			    <td class="casAden">piatok</td>
+				   <td colspan="3" class="emptyCol"></td>
+				   <td colspan="2" class="cviko">Webove technologie</td>
+				   <td colspan="9"></td>
+			  </tr>
+			</tbody>
+		</table>
+    </div>
+
+
+	<h2 class="h2NaStranke" style="">Legenda:</h2>
+
+	<table id="legend">
+		<tr>
+			<td class="prednaska">Prednaska</td>
+			<td class="cviko">Cvicenie</td>
+		</tr>
+	</table>
+
+	<footer>
+		<div class="my_div">
+			@Created by Deny Seven +421 228 228 322
+		</div>
+	</footer>
+</body>
+</html>
