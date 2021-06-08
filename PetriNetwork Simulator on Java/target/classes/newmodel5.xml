@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+<place>
+<id>1</id>
+<x>450</x>
+<y>183</y>
+<label></label>
+<tokens>3</tokens>
+<static>false</static>
+</place>
+<transition>
+<id>2</id>
+<x>620</x>
+<y>190</y>
+<label></label>
+</transition>
+<arc>
+<id>3</id>
+<type>regular</type>
+<sourceId>1</sourceId>
+<destinationId>2</destinationId>
+<multiplicity>2</multiplicity>
+</arc>
+</document>
