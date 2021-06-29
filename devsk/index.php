@@ -70,6 +70,7 @@ $allAuthors = $controller->getAllAuthors();
     <table class="table" id="table">
         <thead>
         <tr>
+            <th>#</th>
             <th scope="col">Názov knihy</th>
             <th scope="col">ISBN</th>
             <th scope="col">Cena</th>
@@ -79,8 +80,10 @@ $allAuthors = $controller->getAllAuthors();
         </thead>
         <tbody>
         <?php
+        $counter = 1;
         foreach ($allBooks as $book){
-            echo "<tr><td>".$book["name"]."</td><td>".$book["isbn"]."</td><td>".$book["price"]."€</td><td>".$book["category"]."</td><td>".$book["author"]."</td></tr>";
+            echo "<tr><td>".$counter."</td><td>".$book["name"]."</td><td>".$book["isbn"]."</td><td>".$book["price"]."€</td><td>".$book["category"]."</td><td>".$book["author"]."</td></tr>";
+            $counter++;
         }
         ?>
         </tbody>
