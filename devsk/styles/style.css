@@ -1,0 +1,62 @@
+header{
+    display: flex;
+    flex-direction: column;
+    position: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.container {
+    margin-top:  7%;
+    width: 40%;
+    height: 10%;
+}
+
+#add-book {
+    text-align: center;
+    float: right;
+}
+
+table {
+    text-align: center;
+}
+
+button{
+    /*position: center;*/
+    /*padding-top: 20px;*/
+    /*margin-top: 20px;*/
+}
+
+
+.h2, h2{
+    text-align: center;
+    position: center;
+}
+
+
+
+footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+    padding: 10px; /* Поля вокруг текста */
+    background: black; /* Цвет фона */
+    text-align: center;
+}
+
+/*form{*/
+/*    width: 550px;*/
+/*    margin: 0 auto;*/
+/*    position: center;*/
+/*}*/
+
+.container, h1 {
+    display: flex;
+    flex-direction: column;
+    position: center;
+    justify-content: center;
+    text-align: center;
+}
+
